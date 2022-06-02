@@ -1,0 +1,160 @@
+:root {
+    --Blue: rgb(31, 105, 243);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(241, 239, 239);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.pagina-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-img {
+    width: 390px;
+}
+
+.container-right-zone {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+.container-right-zone span {
+    color: var(--Blue);
+    font-weight: bold;
+    cursor: pointer;
+}
+    .container-login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        border: 1px solid rgb(204, 199, 199, 0.7);
+        background-color: white;
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .logo-instagram{
+        width: 160px;
+    }
+
+    .profile-image{
+        width: 90px;
+        border-radius: 50%;
+    }
+
+    .container-login button {
+        font-weight: bold;
+        background-color: var(--Blue);
+        color: white;
+        font-size: 14px;
+        border: none;
+        border-radius: 3px;
+        padding: 7px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    .container-verificacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(204, 199, 199, 0.7);
+        background-color: white;
+        color: rgb(116, 114, 114);
+        padding: 15px;
+    }
+
+    .container-download {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+        gap: 15px;
+        font-weight: bold;
+    }
+       .container-download img{
+            width: 150px;
+            cursor: pointer;
+        }
+        .container-images-download {
+            display: flex;
+            gap: 30px;
+        }
+
+@media screen and (min-width: 0px) and (max-width: 499px){
+    .phone-img {
+        display: none;
+    }
+    .container-right-zone {
+        margin-top: 10px;
+        gap: 5px;
+        font-size: 15px;
+    }
+    .container-login {
+        width: 250px;
+        gap: 15px;
+    }
+
+    .logo-instagram{
+        width: 150px;
+    }
+
+    .profile-image{
+        width: 100px;
+    }
+
+    .container-login button {
+        font-size: 14px;
+        padding: 7px;
+        margin-bottom: 2px;
+    }
+
+    .container-verificacion {
+        width: 250px;
+    }
+
+       .container-download img{
+            width: 160px;
+            cursor: pointer;
+        }
+        .container-images-download {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+        }
+}
+
+@media screen and (min-width: 500px) and (max-width: 750px) {
+    .phone-img {
+        display: none;
+    }
+    .container-right-zone{
+        margin-top: 40px;
+        gap: 15px;
+    }
+    .container-login{
+        gap: 15px;
+    }
+    .container-login button {
+        margin-bottom: 5px;
+    }
+}
